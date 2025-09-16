@@ -6,6 +6,7 @@ import MainHero from "../components/Main-Hero";
 import Footer from "../components/Footer";
 import CoreBenefits from "../components/CoreBenefits";
 import ArtProduct from "../components/ArtProduct";
+import PricingTable from "../components/PricingTable";
 
 function Home() {
   return (
@@ -14,6 +15,7 @@ function Home() {
       <MainHero />
       <CoreBenefits />
       <ArtProduct />
+      <PricingTable />
       <Footer />
     </div>
   );

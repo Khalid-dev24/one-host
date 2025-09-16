@@ -63,7 +63,7 @@ const Footer = () => {
               <li>Partners</li>
               <li>Blog</li>
               <li>News</li>
-              <li>Hostingard Review</li>
+              <li>Onehost Review</li>
               <li>Careers (We're hiring!)</li>
               <li>Affiliate Program</li>
             </ul>
