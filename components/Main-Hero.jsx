@@ -1,4 +1,5 @@
 import { FaMapMarkerAlt } from "react-icons/fa";
+import WebHost from "../src/assets/web.png";
 
 const MainHero = () => {
   return (
@@ -7,7 +8,7 @@ const MainHero = () => {
         <p className="offer">🔥 Don't miss limited-time savings: <span>Savings 15%</span></p>
         <h1>
           Fast<span className="dot">.</span> Secure<span className="dot">.</span> Stable<span className="dot">.</span>
-          <br /> VPS Hosting
+          <br /> <img src={WebHost} alt="" /> <span className="vps">VPS Hosting</span>
         </h1>
         <p className="subtext">
           Save time & money with simple and reliable cloud hosting trusted by{" "}

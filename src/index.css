@@ -190,9 +190,20 @@ a {
 .hero-left h1 {
   font-size: 4rem;
   font-weight: bold;
+  line-height: 1.5;
 }
 .hero-left .dot {
   color: orange;
+}
+.hero-left .offer span {
+  color: orange;
+}
+.hero-left h1 .vps {
+  margin-top: -30px;
+}
+.hero-left h1 img {
+  width: 150px;
+  vertical-align: middle;
 }
 .subtext {
   margin: 1rem 0;
