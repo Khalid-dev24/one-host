@@ -8,8 +8,8 @@ function Contact() {
   return (
     <>
       <Navbar />
-      <ContactInfo />
       <ContactForm />
+      <ContactInfo />
       <Footer />
     </> 
     

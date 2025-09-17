@@ -3,7 +3,7 @@ import Product from "../src/assets/product.png";
 
 const AIProducts = () => {
   return (
-    <section className="ai-products">
+    <section className="ai-products" data-aos="fade-up">
       <div className="ai-grid">
         
         <div className="ai-image">

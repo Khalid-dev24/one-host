@@ -3,7 +3,7 @@ import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaInstagram, FaLinkedin, FaFace
 
 const ContactInfo = () => {
   return (
-    <section className="contact-info">
+    <section className="contact-info" data-aos="fade-up">
       <h4 className="tagline">Contact Now</h4>
       <h1>Talk To OneHost</h1>
       <p className='annual'>

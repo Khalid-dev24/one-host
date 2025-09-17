@@ -5,7 +5,7 @@ import Dedicated from "../src/assets/dedicated-server.png";
 
 const CoreBenefits = () => {
   return (
-    <section className="core-benefits">
+    <section className="core-benefits" data-aos="fade-up">
       <p className="tag">Available Products</p>
       <h2 className="title">
         Set-up & scale your Core Benefits Effortlessly
@@ -30,7 +30,7 @@ const CoreBenefits = () => {
             </p>
             <span className="price">From $5.00 /mo</span>
             <img src={VPS} alt="vps-server" />
-          </div>
+          </div> 
 
           <div className="card">
             <h4>Dedicated Server</h4>

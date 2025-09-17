@@ -5,7 +5,7 @@ const ContactForm = () => {
   return (
     <section className="contact-form">
       <div className="form-container">
-        <div className="form-left">
+        <div className="form-left" data-aos="fade-right">
           <h2>Send Us a Message</h2>
           <p>Your email address will not be published. Required fields are marked *</p>
 
@@ -23,7 +23,7 @@ const ContactForm = () => {
           </form>
         </div>
 
-        <div className="form-right">
+        <div className="form-right" data-aos="fade-left">
           <div className="image-stack">
             <img src={FormImg} alt="form images" />
           </div>

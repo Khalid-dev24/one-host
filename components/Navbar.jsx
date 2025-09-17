@@ -20,13 +20,13 @@ const Navbar = () => {
   return (
     <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
       <div className="nav-container">
-        <div className="logo">OneHost</div>
+        <div className="logo"><a href="/">OneHost</a></div>
         <div className="hamburger" onClick={handleMenuToggle}>
           {menuOpen ? <FaTimes /> : <FaBars />}
         </div>
         <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
 
-          <li className="dropdown">
+          {/* <li className="dropdown">
             Hosting <FaChevronDown className="icon" />
             <div className="dropdown-menu mega-menu">
               <div className="dropdown-item">
@@ -51,7 +51,7 @@ const Navbar = () => {
                 </div>
               </div>
             </div>
-          </li>
+          </li> */}
 
           <li className="dropdown">
             Products <FaChevronDown className="icon" />
@@ -59,42 +59,42 @@ const Navbar = () => {
               <div className="dropdown-item">
                 <FaRocket className="icon colored" />
                 <div>
-                  <h4>VPS Lite</h4>
+                  <h4><a href="/#pricing">VPS Lite</a></h4>
                   {/* <p>Affordable hosting solution for small websites.</p> */}
                 </div>
               </div>
               <div className="dropdown-item">
                 <FaCloud className="icon colored" />
                 <div>
-                  <h4>VPS Basic</h4>
+                  <h4><a href="/#pricing">VPS Basic</a></h4>
                   {/* <p>Scalable cloud servers with high uptime.</p> */}
                 </div>
               </div>
               <div className="dropdown-item">
                 <FaBolt className="icon colored" />
                 <div>
-                  <h4>VPS Pro</h4>
+                  <h4><a href="/#pricing">VPS Pro</a></h4>
                   {/* <p>Virtual servers for better speed & control.</p> */}
                 </div>
               </div>
               <div className="dropdown-item">
                 <FaStar className="icon colored" />
                 <div>
-                  <h4>VPS Business</h4>
+                  <h4><a href="/#pricing">VPS Business</a></h4>
                   {/* <p>Virtual servers for better speed & control.</p> */}
                 </div>
               </div>
               <div className="dropdown-item">
                 <FaGem className="icon colored" />
                 <div>
-                  <h4>VPS Enterprise</h4>
+                  <h4><a href="/#pricing">VPS Enterprise</a></h4>
                   {/* <p>Virtual servers for better speed & control.</p> */}
                 </div>
               </div>
               <div className="dropdown-item">
                 <FaCrown className="icon colored" />
                 <div>
-                  <h4>VPS Ultimate</h4>
+                  <h4><a href="/#pricing">VPS Ultimate</a></h4>
                   {/* <p>Virtual servers for better speed & control.</p> */}
                 </div>
               </div>
@@ -103,7 +103,7 @@ const Navbar = () => {
           
           
           <li className="dropdown">
-            <a href="#pricing">Pricing 
+            <a href="/#pricing">Pricing 
             {/* <FaChevronDown className="icon" /> */}
             {/* <ul className="dropdown-menu">
               <li>Dedicated</li>
@@ -160,7 +160,7 @@ const Navbar = () => {
           </li>
 
           <li className="dropdown">
-            About Us
+            <a href="/about">About Us</a>
             {/* <FaChevronDown className="icon" /> */}
           </li>
 

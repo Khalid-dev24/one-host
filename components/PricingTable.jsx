@@ -1,8 +1,21 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const PricingTable = () => {
+  const navigate = useNavigate();
+
+  
+  const plans = [
+    { name: "VPS Lite", vCPU: 1, memory: "1 GB", bandwidth: "Unlimited", storage: "20 GB SSD", price: "₦14,000" },
+    { name: "VPS Basic", vCPU: 1, memory: "2 GB", bandwidth: "Unlimited", storage: "50 GB SSD", price: "₦19,000" },
+    { name: "VPS Pro", vCPU: 2, memory: "2 GB", bandwidth: "Unlimited", storage: "50 GB SSD", price: "₦30,000" },
+    { name: "VPS Business", vCPU: 2, memory: "4 GB", bandwidth: "Unlimited", storage: "80 GB SSD", price: "₦42,000" },
+    { name: "VPS Enterprise", vCPU: 4, memory: "8 GB", bandwidth: "Unlimited", storage: "200 GB SSD", price: "₦65,000" },
+    { name: "VPS Ultimate", vCPU: 6, memory: "12 GB", bandwidth: "Unlimited", storage: "300 GB SSD", price: "₦110,000" },
+  ];
+
   return (
-    <div className="pricing-table" id="pricing">
+    <div className="pricing-table" id="pricing" data-aos="flip-left">
       <h2>VPS Cloud Hosting Pricing</h2>
       <table>
         <thead>
@@ -13,57 +26,28 @@ const PricingTable = () => {
             <th>Bandwidth</th>
             <th>Storage</th>
             <th>Monthly Price (NGN)</th>
+            <th></th>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>VPS Lite</td>
-            <td>1</td>
-            <td>1 GB</td>
-            <td>Unlimited</td>
-            <td>20 GB SSD</td>
-            <td>₦14,000</td>
-          </tr>
-          <tr>
-            <td>VPS Basic</td>
-            <td>1</td>
-            <td>2 GB</td>
-            <td>Unlimited</td>
-            <td>50 GB SSD</td>
-            <td>₦19,000</td>
-          </tr>
-          <tr>
-            <td>VPS Pro</td>
-            <td>2</td>
-            <td>2 GB</td>
-            <td>Unlimited</td>
-            <td>50 GB SSD</td>
-            <td>₦30,000</td>
-          </tr>
-          <tr>
-            <td>VPS Business</td>
-            <td>2</td>
-            <td>4 GB</td>
-            <td>Unlimited</td>
-            <td>80 GB SSD</td>
-            <td>₦42,000</td>
-          </tr>
-          <tr>
-            <td>VPS Enterprise</td>
-            <td>4</td>
-            <td>8 GB</td>
-            <td>Unlimited</td>
-            <td>200 GB SSD</td>
-            <td>₦65,000</td>
-          </tr>
-          <tr>
-            <td>VPS Ultimate</td>
-            <td>6</td>
-            <td>12 GB</td>
-            <td>Unlimited</td>
-            <td>300 GB SSD</td>
-            <td>₦110,000</td>
-          </tr>
+          {plans.map((plan, index) => (
+            <tr key={index}>
+              <td>{plan.name}</td>
+              <td>{plan.vCPU}</td>
+              <td>{plan.memory}</td>
+              <td>{plan.bandwidth}</td>
+              <td>{plan.storage}</td>
+              <td>{plan.price}</td>
+              <td>
+                <button
+                  className="order-btn"
+                  onClick={() => navigate("/signup")}
+                >
+                  Order Now
+                </button>
+              </td>
+            </tr>
+          ))}
         </tbody>
       </table>
     </div>
