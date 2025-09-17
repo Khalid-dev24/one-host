@@ -5,10 +5,9 @@ const ContactInfo = () => {
   return (
     <section className="contact-info">
       <h4 className="tagline">Contact Now</h4>
-      <h1>Let's Connect & Navigate<br />Your Financial Goals</h1>
+      <h1>Talk To OneHost</h1>
       <p className='annual'>
-        With worldwide annual spend on digital advertising surpassing $325 billion, 
-        it's no achiev to online marketing any business.
+        OneHost is here to provide assistance with large deployments, cloud migrations, <br />cloud cost comparisons, and proof of concepts. Get in touch below.
       </p>
 
       <div className="info-grid">

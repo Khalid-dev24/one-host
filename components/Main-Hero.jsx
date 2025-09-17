@@ -15,8 +15,8 @@ const MainHero = () => {
           <span className="highlight">80,000+ Agencies</span>, developers, and businesses that demand high performance!
         </p>
         <div className="buttons">
-          <button className="btn-primary">Sign up</button>
-          <button className="btn-secondary">Explore Products</button>
+          <button className="btn-primary">Create Account</button>
+          <button className="btn-secondary">Contact Sales</button>
         </div>
       </div>
 

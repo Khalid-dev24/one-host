@@ -118,7 +118,7 @@ const Navbar = () => {
               <div className="dropdown-item">
                 <FaPhoneAlt className="icon colored" />
                 <div>
-                  <h4>Contact Us</h4>
+                  <h4><a href="/contact">Contact Us</a></h4>
                   <p>Reach our 24/7 support team for help.</p>
                 </div>
               </div>
@@ -160,15 +160,15 @@ const Navbar = () => {
           </li>
 
           <li className="dropdown">
-            <a href="/contact">About Us
-            {/* <FaChevronDown className="icon" /> */}</a>
+            About Us
+            {/* <FaChevronDown className="icon" /> */}
           </li>
 
           <li className="mobile-only">
-            <button className="get-started">Get Started</button>
+            <button className="get-started">Login/Signup</button>
           </li>
         </ul>
-        <button className="get-started desktop-only">Login/Signup</button>
+        <button className="get-started desktop-only"><a href="/login">Login/Signup</a></button>
       </div>
     </nav>
   );
