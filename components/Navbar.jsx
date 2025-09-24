@@ -33,9 +33,9 @@ const Navbar = () => {
             <div className="dropdown-menu mega-menu">
               <div className="dropdown-item">
                 <FaCloud className="icon colored" />
-                <div>
+                <div><a href="/">
                   <h4>Cloud Hosting</h4>
-                  <p>Scalable cloud servers with high uptime.</p>
+                  <p>Scalable cloud servers with high uptime.</p></a>
                 </div>
               </div>
               <div
