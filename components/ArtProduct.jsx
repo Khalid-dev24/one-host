@@ -20,7 +20,7 @@ const AIProducts = () => {
             Discover <br /> Our AI Product Range
           </h2>
           <p>
-            Onehost provides a full range of Cloud services to develop
+            CloudOne provides a full range of Cloud services to develop
             innovative solutions and scale AI projects from A to Z. Discover the
             latest additions to our AI Suite.
           </p>

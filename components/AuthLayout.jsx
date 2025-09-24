@@ -8,12 +8,12 @@ const AuthLayout = ({ children }) => {
 
       <div className="auth-right">
         <div className="brand">
-          <h1 className="brand-logo">ONEHOST</h1>
+          <h1 className="brand-logo">CloudOne</h1>
         </div>
         <div className="auth-footer">
-          <Link to="/privacy">Privacy</Link>
-          <Link to="/terms">Terms of Service</Link>
-          <Link to="/faq">FAQ</Link>
+          <Link to="#">Privacy</Link>
+          <Link to="#">Terms of Service</Link>
+          <Link to="#">FAQ</Link>
         </div>
       </div>
     </div>

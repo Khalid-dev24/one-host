@@ -18,6 +18,20 @@ a {
   color: inherit;
 }
 
+.coming-soon-tooltip {
+  position: absolute;
+  top: 0;
+  right: -110px;
+  background: #2563eb;
+  color: #fff;
+  padding: 4px 12px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  z-index: 100;
+}
+
 .navbar {
   position: fixed;
   top: 0;
@@ -147,13 +161,11 @@ a {
   display: flex;
 }
 
-/* Animation */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(8px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* CTA Button */
 .get-started {
   background: #2563eb;
   color: white;
@@ -213,7 +225,7 @@ a {
 .highlight {
   color: #22c55e;
 }
-.buttons {
+.main-buttons {
   display: flex;
   gap: 1rem;
 }
@@ -449,7 +461,8 @@ a {
 }
 .footer-left p {
   margin: 1rem 0;
-  max-width: 300px;
+  max-width: 350px;
+  line-height: 1.5;
 }
 .footer-left h4 {
   margin: 1rem 0 0.5rem;
@@ -1091,6 +1104,197 @@ input[type="password"] {
 
 .cta-button:hover {
   background: #1e4fc2;
+}
+
+
+/* Pricing Page  */
+.pricing-page {
+  background: white; 
+  color: #111827;
+}
+
+.pricing-page h2 {
+  color: #111827;
+}
+
+.pricing-page th {
+   color: #111827;
+}
+
+
+.pricing-hero {
+  /* background: #f9fafb; */
+  text-align: center;
+  padding: 80px 20px;
+  margin-top: 7rem;
+}
+
+.pricing-hero .container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.pricing-hero h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.pricing-hero p {
+  font-size: 1.1rem;
+  color: #f9fafb;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.pricing-hero .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: 16px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn.primary {
+  background: #4f46e5;
+  color: white;
+}
+
+.btn.primary:hover {
+  background: #4338ca;
+}
+
+.btn.secondary {
+  border: 1px solid #d1d5db;
+  color: #374151;
+  background: white;
+}
+
+.btn.secondary:hover {
+  background: #f3f4f6;
+}
+
+/* FAQ Section  */
+
+.faq-section {
+  background: #f3f6fa;  
+  padding: 60px 20px;
+}
+
+
+.faq-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.faq-section h2 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #1f2937;
+  text-align: center;
+}
+
+
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.tab {
+  position: relative;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background: white;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.tab.active {
+  background: #2563eb;
+  color: white;
+  border-color: #3b82f6;
+}
+
+.tab.disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+  background: #f9fafb;
+  color: #9ca3af;
+}
+
+
+.tab.disabled::after {
+  content: "Coming Soon";
+  position: absolute;
+  bottom: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #111827;
+  color: #fff;
+  font-size: 0.75rem;
+  padding: 4px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.tab.disabled:hover::after {
+  opacity: 1;
+}
+
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.accordion-item {
+  background: #e5f1fb;
+  border-radius: 6px;
+  padding: 15px 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.accordion-item:hover {
+  background: #dbeafe;
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.arrow {
+  font-size: 1rem;
+  color: #2563eb;
+}
+
+.accordion-body {
+  margin-top: 10px;
+  color: #374151;
+  font-size: 0.95rem;
+  line-height: 1.5;
 }
 
 

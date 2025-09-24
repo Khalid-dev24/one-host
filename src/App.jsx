@@ -10,6 +10,7 @@ import Login from "../pages/Login";
 import Signup from "../pages/Signup";
 import ForgotPassword from "../pages/ForgotPassword";
 import AboutUs from "../pages/AboutUs";
+import PricingPage from "../pages/PricingPage";
 
 function App() {
 
@@ -30,6 +31,7 @@ function App() {
           <Route path="/signup" element={<Signup />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
           <Route path="/about" element={<AboutUs />} />
+          <Route path="/pricing-page" element={<PricingPage />} />
         </Routes>
       </div>
     </Router>

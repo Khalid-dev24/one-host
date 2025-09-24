@@ -12,16 +12,16 @@ const MainHero = () => {
         </h1>
         <p className="subtext">
           Save time & money with simple and reliable cloud hosting trusted by{" "}
-          <span className="highlight">80,000+ Agencies</span>, developers, and businesses that demand high performance!
+          <span className="highlight">5,000+ Agencies</span>, developers, and businesses that demand high performance!
         </p>
-        <div className="buttons">
+        <div className="main-buttons">
           <button className="btn-primary"><a href="/signup">Create Account</a></button>
           <button className="btn-secondary"><a href="/contact">Contact Sales</a></button>
         </div>
       </div>
 
       <div className="hero-right" data-aos="fade-left">
-        <div className="availability">64+ <br /> <span>Our Availability</span></div>
+        <div className="availability">20+ <br /> <span>Our Availability</span></div>
         <div className="map">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 1001">
             <image href="https://upload.wikimedia.org/wikipedia/commons/8/80/World_map_-_low_resolution.svg" 
