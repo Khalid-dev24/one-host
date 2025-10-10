@@ -7,6 +7,7 @@ import Footer from "../components/Footer";
 import CoreBenefits from "../components/CoreBenefits";
 import ArtProduct from "../components/ArtProduct";
 import PricingTable from "../components/PricingTable";
+import ServerPricing from "../components/ServerPricing";
 import FAQ from "../components/Faq";
 
 function Home() {
@@ -17,6 +18,7 @@ function Home() {
       <CoreBenefits />
       <ArtProduct />
       <PricingTable />
+      <ServerPricing />
       <FAQ />
       <Footer />
     </div>
