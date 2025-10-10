@@ -31,7 +31,7 @@ const Footer = () => {
             <h2>CloudOne</h2>
           </div>
           <p>
-            Power your online business with OneHost cloud hosting. Enjoy reliable performance, instant scalability, and secure infrastructure. Whether you're launching an e-commerce store, building a portfolio, or growing a global brand. Focus on your success while we handle the technology.
+            Power your online business with CloudOne cloud hosting. Enjoy reliable performance, instant scalability, and secure infrastructure. Whether you're launching an e-commerce store, building a portfolio, or growing a global brand. Focus on your success while we handle the technology.
           </p>
           <div className="social-icons">
             <a href="#"><FaTwitter /></a>

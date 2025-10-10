@@ -5,9 +5,9 @@ const ContactInfo = () => {
   return (
     <section className="contact-info" data-aos="fade-up">
       <h4 className="tagline">Contact Now</h4>
-      <h1>Talk To OneHost</h1>
+      <h1>Talk To CloudOne</h1>
       <p className='annual'>
-        OneHost is here to provide assistance with large deployments, cloud migrations, <br />cloud cost comparisons, and proof of concepts. Get in touch below.
+        CloudOne is here to provide assistance with large deployments, cloud migrations, <br />cloud cost comparisons, and proof of concepts. Get in touch below.
       </p>
 
       <div className="info-grid">
@@ -21,7 +21,7 @@ const ContactInfo = () => {
         <div>
           <h3>Hotline</h3>
           <p><FaPhoneAlt /> +2341 234 5678<br />
-          <FaEnvelope /> onehost@gmail.com</p>
+          <FaEnvelope /> cloudone@gmail.com</p>
         </div>
 
         <div>

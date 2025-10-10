@@ -1,11 +1,19 @@
 import { useState, useEffect } from "react";
 import { HashLink } from "react-router-hash-link";
+import Logo from "../src/assets/cloud-one-nav-logo.png";
+import DefaultLogo from "../src/assets/cloud-nav-logo-default.png";
 import { FaChevronDown, FaBars, FaTimes, FaServer, FaCloud, FaNetworkWired, FaRocket, FaBolt, FaCrown, FaGem, FaStar, FaPhoneAlt, FaLock, FaBook, FaFileContract, FaQuestionCircle } from "react-icons/fa";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [showComingSoon, setShowComingSoon] = useState("");
+
+
+  useEffect(() => {
+    const img = new Image();
+    img.src = Logo;
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,7 +30,12 @@ const Navbar = () => {
   return (
     <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
       <div className="nav-container">
-        <div className="logo"><a href="/">CloudOne</a></div>
+        <div className="logo">
+          <a href="/"> 
+           <img src={scrolled ? Logo : DefaultLogo} alt="CloudOne"
+           className="nav-logo" />
+          </a>
+        </div>
         <div className="hamburger" onClick={handleMenuToggle}>
           {menuOpen ? <FaTimes /> : <FaBars />}
         </div>

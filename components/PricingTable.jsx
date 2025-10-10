@@ -16,6 +16,7 @@ const PricingTable = () => {
 
   return (
     <div className="pricing-table" id="pricing" data-aos="flip-left">
+      <p>Linux</p>
       <h2>VPS Cloud Hosting Pricing</h2>
       <table>
         <thead>
