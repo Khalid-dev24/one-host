@@ -82,7 +82,7 @@ a {
 }
 
 .dropdown-menu {
-  z-index: 9999;
+  z-index: 9;
 }
 
 
@@ -121,7 +121,7 @@ a {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem 2rem;
-  min-width: 500px;
+  /* min-width: 500px; */
 }
 
 
@@ -181,6 +181,10 @@ a {
 
 .get-started:hover {
   background: #1e4fc9;
+}
+
+.mobile-only {
+  display: none;
 }
 
 
@@ -657,6 +661,15 @@ button {
   width: 70%;
   border-radius: 8px;
 }
+.status-message {
+  margin-top: 10px;
+  color: #4caf50; 
+}
+
+.status-message.error {
+  color: #f44336; 
+}
+
 
 
 /* Pricing Table */
@@ -724,6 +737,26 @@ button {
   background: #1e4fc2;
 }
 
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto; 
+}
+
+.pricing-table table {
+  min-width: 700px; 
+}
+
+
+.table-wrapper::-webkit-scrollbar {
+  height: 6px;
+}
+.table-wrapper::-webkit-scrollbar-thumb {
+  background: #2563eb;
+  border-radius: 3px;
+}
+.table-wrapper::-webkit-scrollbar-track {
+  background: #1f2937;
+}
 
 
 
@@ -1319,7 +1352,7 @@ input[type="password"] {
   background-color: #111;
   color: #fff;
   border-radius: 10px;
-  overflow: hidden;
+  overflow-x: auto;
   box-shadow: 0 0 10px rgba(0,0,0,0.4);
 }
 
@@ -1329,11 +1362,24 @@ input[type="password"] {
   font-size: 1.2rem;
   border-bottom: 1px solid #333;
   color: white;
+  
 }
 
 .s-table {
   width: 100%;
   border-collapse: collapse;
+  min-width: 700px;
+}
+
+.spricing-table::-webkit-scrollbar {
+  height: 6px;
+}
+.spricing-table::-webkit-scrollbar-thumb {
+  background-color: #00d26a;
+  border-radius: 3px;
+}
+.spricing-table::-webkit-scrollbar-track {
+  background-color: #1a1a1a;
 }
 
 .s-head, .s-data {

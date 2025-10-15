@@ -193,7 +193,7 @@ const Navbar = () => {
           </li>
 
           <li className="mobile-only">
-            <button className="get-started">Login/Signup</button>
+            <button className="get-started"><a href="/login">Login/Signup</a></button>
           </li>
         </ul>
         <button className="get-started desktop-only"><a href="/login">Login/Signup</a></button>

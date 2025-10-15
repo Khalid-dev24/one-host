@@ -4,12 +4,12 @@ import { FaGlobe, FaMoneyBillWave, FaServer, FaCompactDisc, FaLinux, FaHandshake
 const differentiators = [
   {
     title: "Geographic Footprint",
-    description: "Vultr's 32 strategically placed points of presence in cities around the world make it more than likely you can launch a cloud environment close to you or your customers",
+    description: "CloudOne's 32 strategically placed points of presence in cities around the world make it more than likely you can launch a cloud environment close to you or your customers",
     icon: <FaGlobe className="diff-icon" />,
   },
   {
     title: "One Click Apps",
-    description: "Vult's one-click apps allow you to quickly launch WordPress blogs, garme servers, development environments and more with a single click.",
+    description: "CloudOne's one-click apps allow you to quickly launch WordPress blogs, garme servers, development environments and more with a single click.",
     icon: <FaMoneyBillWave className="diff-icon" />,
   },
   {
@@ -24,7 +24,7 @@ const differentiators = [
   },
   {
     title: "Linux, Windows and BSD",
-    description: "Vultr natively supports a wide range of popular Linux, Windows, and BGD distributions.",
+    description: "CloudOne natively supports a wide range of popular Linux, Windows, and BGD distributions.",
     icon: <FaLinux className="diff-icon" />,
   },
   {

@@ -20,16 +20,16 @@ const ContactInfo = () => {
          
         <div>
           <h3>Hotline</h3>
-          <p><FaPhoneAlt /> +2341 234 5678<br />
-          <FaEnvelope /> cloudone@gmail.com</p>
+          <p><FaPhoneAlt /> +234 805 623 5944<br />
+          <FaEnvelope /> cloud@enterpriseone.com.ng</p>
         </div>
 
-        <div>
+        <div className='social-media'>
           <h3>Social Media</h3>
           <p className="social-links">
-            <a href="#"><FaInstagram /> Instagram</a><br />
-            <a href="#"><FaLinkedin /> LinkedIn</a><br />
-            <a href="#"><FaFacebook /> Facebook</a>
+            <a href="#"><FaInstagram /></a><br />
+            <a href="#"><FaLinkedin /></a><br />
+            <a href="#"><FaFacebook /></a>
           </p>
         </div>
       </div>

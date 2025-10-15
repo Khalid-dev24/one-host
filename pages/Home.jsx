@@ -1,6 +1,6 @@
 import React from "react";
 import "../src/index.css";
-import "../src/responsiveness.css"
+import "../src/responsiveness.css";
 import Navbar from "../components/Navbar";
 import MainHero from "../components/Main-Hero";
 import Footer from "../components/Footer";

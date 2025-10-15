@@ -14,10 +14,12 @@ const PricingTable = () => {
     { name: "VPS Ultimate", vCPU: 6, memory: "12 GB", bandwidth: "Unlimited", storage: "300 GB SSD", price: "₦110,000" },
   ];
 
+
   return (
     <div className="pricing-table" id="pricing" data-aos="flip-left">
       <p>Linux</p>
       <h2>VPS Cloud Hosting Pricing</h2>
+      <div className="table-wrapper">
       <table>
         <thead>
           <tr>
@@ -51,6 +53,7 @@ const PricingTable = () => {
           ))}
         </tbody>
       </table>
+      </div>
     </div>
   );
 };

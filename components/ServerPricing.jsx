@@ -1,7 +1,9 @@
 import React from "react";
+import { useNavigate } from 'react-router-dom'
 
 
 const ServerPricing = () => {
+  const navigate = useNavigate();
   const servers = [
     { name: "W1 Server", specs: "2C / 4GB / 100GB", price: "₦56,576.00" },
     { name: "W2 Server", specs: "4C / 8GB / 200GB", price: "₦113,152.00" },
@@ -28,6 +30,14 @@ const ServerPricing = () => {
               <td className="name s-data">{server.name}</td>
               <td className="s-data">{server.specs}</td>
               <td className="price s-data">{server.price}</td>
+              <td>
+                <button
+                  className="order-btn"
+                  onClick={() => navigate("/signup")}
+                >
+                  Order Now
+                </button>
+              </td>
             </tr>
           ))}
         </tbody>

@@ -1,16 +1,21 @@
 @media (max-width: 768px) {
+  .logo {
+    margin-left: -2rem;
+  }
   .nav-links {
     display: none;
     position: absolute;
-    top: 60px; /* adjust as needed */
+    top: 60px; 
     left: 0;
     width: 100%;
+    color: black;
     background: #fff;
     flex-direction: column;
     z-index: 100;
   }
   .nav-links.open {
     display: flex;
+    padding: 2rem;
   }
   .hamburger {
     display: block;
@@ -21,14 +26,11 @@
   .mobile-only {
     display: block;
     width: 100%;
-    text-align: center;
+    text-align: left;
     margin-top: 1rem;
   }
-}
-@media (min-width: 769px) {
-  .mobile-only {
-    display: none;
-  }
+
+  
 }
 
 @media (max-width: 900px) {
@@ -36,39 +38,177 @@
     flex-direction: column;
     text-align: center;
   }
+  .hero-left .offer {
+    font-size: 0.9rem;
+    text-align: left;
+  }
+
+  .hero-left h1 {
+    font-size: 3rem;
+    text-align: left;
+  }
+
+  .hero-left h1 img {
+    display: none;
+  }
+  .hero-left .subtext {
+    text-align: left;
+  }
+
+  .bottom-divider {
+    display: none;
+  }
+
   .hero-right {
     margin-top: 2rem;
   }
-  .nav-links {
-    display: none;
-  }
-}
 
-
-
-@media (max-width: 900px) {
-  .footer-container {
+  .cards {
+    display: flex;
     flex-direction: column;
   }
-  .footer-links {
-    flex-direction: column;
+  .footer {
+    padding: 2rem 2rem;
   }
   .footer-bottom {
-    flex-direction: column;
-    gap: 1rem;
+    text-align: left;
   }
-}
+
+  .auth-container {
+    flex-direction: column;
+    align-items: center;
+    max-height: 100vh;
+  }
+  .auth-right {
+    display: none;
+  }
+  .auth-left {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .buttons {
+    margin: 0 auto;
+  }
+
+   .form-right {
+    flex: 0;
+   }
+  .form-left h2 {
+    font-size: 2rem;
+  }
+  .form-left p {
+    font-size: 1rem;
+  }
+  .image-stack img {
+    display: none;
+  }
+  .info-grid {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .contact-form {
+    width: 100%;
+    padding: 8rem 2rem;
+  }
+  .form-container {
+    gap: 0;
+  }
+  .contact-info h4 {
+    font-size: 1rem;
+  }
+  .contact-info h1 {
+    font-size: 2rem;
+  }
+  .contact-info .annual {
+    font-size: 0.9rem;
+  }
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 2rem;
+  }
 
 
-/* Responsive */
-@media (max-width: 900px) {
+  /* About Us  */
+  .welcome-section h1 {
+    font-size: 2.2rem;
+  }
+  .welcome-section p {
+    font-size: 1.2rem;
+  }
+
+  .mission-section {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 3rem;
+  }
+
   .differentiators-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .mission-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .cta-box {
+    display: flex;
+    flex-direction: column;
+  }
+
 }
 
 @media (max-width: 600px) {
   .differentiators-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+/* Tables  */
+@media (max-width: 768px) {
+  .pricing-table {
+    padding: 1.5rem;
+  }
+
+  .pricing-table h2 {
+    font-size: 1.2rem;
+  }
+
+  .pricing-table th,
+  .pricing-table td {
+    padding: 0.6rem;
+    font-size: 0.85rem;
+  }
+
+  .order-btn {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.8rem;
+  }
+}
+
+/* server  */
+@media (max-width: 768px) {
+  .spricing-table {
+    width: 95%;
+    margin: 40px auto;
+  }
+
+  .spricing-table h2 {
+    font-size: 1rem;
+    padding: 15px;
+  }
+
+  .s-head, .s-data {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+
+  .order-btn {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
   }
 }
