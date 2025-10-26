@@ -1,17 +1,17 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 
 const PricingTable = () => {
-  const navigate = useNavigate();
+  
 
   
   const plans = [
-    { name: "VPS Lite", vCPU: 1, memory: "1 GB", bandwidth: "Unlimited", storage: "20 GB SSD", price: "₦14,000" },
-    { name: "VPS Basic", vCPU: 1, memory: "2 GB", bandwidth: "Unlimited", storage: "50 GB SSD", price: "₦19,000" },
-    { name: "VPS Pro", vCPU: 2, memory: "2 GB", bandwidth: "Unlimited", storage: "50 GB SSD", price: "₦30,000" },
-    { name: "VPS Business", vCPU: 2, memory: "4 GB", bandwidth: "Unlimited", storage: "80 GB SSD", price: "₦42,000" },
-    { name: "VPS Enterprise", vCPU: 4, memory: "8 GB", bandwidth: "Unlimited", storage: "200 GB SSD", price: "₦65,000" },
-    { name: "VPS Ultimate", vCPU: 6, memory: "12 GB", bandwidth: "Unlimited", storage: "300 GB SSD", price: "₦110,000" },
+    { name: "VPS Lite", vCPU: 1, memory: "1 GB", bandwidth: "Unlimited", storage: "20 GB SSD", price: "₦14,000", orderUrl: "https://host.enterpriseone.com.ng/index.php?rp=/store/Linux-Cloud-Server/vps-lite" },
+    { name: "VPS Basic", vCPU: 1, memory: "2 GB", bandwidth: "Unlimited", storage: "50 GB SSD", price: "₦19,000", orderUrl: "https://host.enterpriseone.com.ng/index.php?rp=/store/Linux-Cloud-Server/vps-basic"},
+    { name: "VPS Pro", vCPU: 2, memory: "2 GB", bandwidth: "Unlimited", storage: "50 GB SSD", price: "₦30,000", orderUrl: "https://host.enterpriseone.com.ng/index.php?rp=/store/Linux-Cloud-Server/vps-pro" },
+    { name: "VPS Business", vCPU: 2, memory: "4 GB", bandwidth: "Unlimited", storage: "80 GB SSD", price: "₦42,000", orderUrl: "https://host.enterpriseone.com.ng/index.php?rp=/store/Linux-Cloud-Server/vps-business" },
+    { name: "VPS Enterprise", vCPU: 4, memory: "8 GB", bandwidth: "Unlimited", storage: "200 GB SSD", price: "₦65,000", orderUrl: "https://host.enterpriseone.com.ng/index.php?rp=/store/Linux-Cloud-Server/vps-enterprise" },
+    { name: "VPS Ultimate", vCPU: 6, memory: "12 GB", bandwidth: "Unlimited", storage: "300 GB SSD", price: "₦110,000", orderUrl: "https://host.enterpriseone.com.ng/index.php?rp=/store/Linux-Cloud-Server/vps-ultimate" },
   ];
 
 
@@ -44,7 +44,7 @@ const PricingTable = () => {
               <td>
                 <button
                   className="order-btn"
-                  onClick={() => navigate("/signup")}
+                  onClick={() => window.open(plan.orderUrl, '_blank', 'noopener,noreferrer')}
                 >
                   Order Now
                 </button>

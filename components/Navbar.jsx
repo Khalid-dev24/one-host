@@ -140,7 +140,7 @@ const Navbar = () => {
 
           <li className="dropdown">
             <div>
-              <a href="/contact">Contact Us</a>
+              <a href="https://host.enterpriseone.com.ng/supporttickets.php">Contact Us</a>
             </div>
           </li>
 
@@ -193,10 +193,10 @@ const Navbar = () => {
           </li>
 
           <li className="mobile-only">
-            <button className="get-started"><a href="/login">Login/Signup</a></button>
+            <button className="get-started"><a href="https://host.enterpriseone.com.ng/clientarea.php">Login</a></button>
           </li>
         </ul>
-        <button className="get-started desktop-only"><a href="/login">Login/Signup</a></button>
+        <button className="get-started desktop-only"><a href="https://host.enterpriseone.com.ng/clientarea.php">Login</a></button>
       </div>
     </nav>
   );

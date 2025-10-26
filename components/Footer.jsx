@@ -64,7 +64,7 @@ const Footer = () => {
               {/* <li>News</li> */}
               {/* <li>CloudOne Review</li> */}
               {/* <li>Careers (We're hiring!)</li> */}
-              <li>Affiliate Program</li>
+              <li><a href="https://host.enterpriseone.com.ng/affiliates.php">Affiliate Program</a></li>
             </ul>
           </div>
           <div>
