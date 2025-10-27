@@ -6,7 +6,7 @@ import Dedicated from "../src/assets/dedicated-server.png";
 const CoreBenefits = () => {
   return (
     <section className="core-benefits" data-aos="fade-up">
-      <p className="tag">Available Products</p>
+      <p className="tag"><a href="/pricing-page">Available Products</a></p>
       <h2 className="title">
         Set-up & scale your Core Benefits Effortlessly
       </h2>

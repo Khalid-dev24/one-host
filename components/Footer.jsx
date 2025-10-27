@@ -49,7 +49,7 @@ const Footer = () => {
               {/* <li>Managed WordPress Hosting</li> */}
               {/* <li>WordPress Hosting</li> */}
               {/* <li>Reseller Hosting</li> */}
-              <li>Cloud Hosting</li>
+              <li><a href="/#pricing">Cloud Hosting</a></li>
               <li>Web Hosting</li>
               <li>Domain Hosting</li>
               {/* <li>Add-Ons</li> */}

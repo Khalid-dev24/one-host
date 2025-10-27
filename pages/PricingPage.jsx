@@ -24,6 +24,7 @@ const PricingPage = () => {
       <div className="pricing-table pricing-page" id="pricing" data-aos="flip-left">
       <p>Linux</p>
       <h2>VPS Cloud Hosting Pricing</h2>
+      <div className="table-wrapper">
       <table>
         <thead>
           <tr>
@@ -57,6 +58,7 @@ const PricingPage = () => {
           ))}
         </tbody>
       </table>
+      </div>
     </div>
     <ServerPricing />
     <Footer />

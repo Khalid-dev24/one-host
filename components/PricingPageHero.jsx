@@ -10,7 +10,7 @@ const PricingHero = () => {
           just flexible options designed to help you grow.
         </p>
         <div className="buttons">
-          <a href="/signup" className="btn primary">Get Started</a>
+          <a href="https://host.enterpriseone.com.ng/clientarea.php" target="_blank" className="btn primary">Get Started</a>
           
         </div>
       </div>
